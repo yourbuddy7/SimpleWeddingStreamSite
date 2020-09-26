@@ -6,7 +6,7 @@ export class CounterComponent extends React.Component{
         super(props);
       
         this.state = {
-            weddingDate: new Date(2020, 9, 20, 12), //set for noon, change accordingly
+            weddingDate: new Date(2020, 9, 10, 12), //set for noon, change accordingly
             currentDate: new Date(),
             play: false
             //toDateString()
@@ -27,6 +27,7 @@ export class CounterComponent extends React.Component{
         return outString;
     }
 
+    //make this into a lifecycle method please
     renderVideoPlayer(){
         if (this.state.play){
             return (
