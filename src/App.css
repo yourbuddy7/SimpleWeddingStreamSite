@@ -1,0 +1,80 @@
+.App {
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+h1{
+  font-size: 4rem;
+  margin: .2rem;
+}
+
+.h1Light{
+  font-weight: lighter;
+  font-size: 2.5rem;
+}
+
+h2{
+  margin: 0;
+  font-weight: lighter;
+}
+
+.VideoContainer{
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+iframe{
+  box-shadow: 1rem 1rem 3rem grey;
+  /* margin: 1.5rem; */
+}
+
+hr{
+  margin: 3rem;
+}
+
+.iframeConstraint{
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.iframeContainer{
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+}
+
+.responsiveIframe{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+footer{
+  position: static;
+  width: 79%;
+  bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* @media only screen and (max-width: 800px){
+  footer{
+    position: static;
+  }
+} */
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
