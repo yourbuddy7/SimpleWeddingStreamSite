@@ -7,6 +7,7 @@ import {CounterComponent} from './components/counter/counter';
 function App() {
   return (
     <div className="App">
+      <h1>test change</h1>
       <CounterComponent />
       <footer>
         <h6>A very fancy app made by the brother of the bride</h6>
