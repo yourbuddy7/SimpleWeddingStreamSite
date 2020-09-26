@@ -13,16 +13,32 @@ export class CounterComponent extends React.Component{
         }
         this.returnDate = this.returnDate.bind(this);
         this.renderVideoPlayer = this.renderVideoPlayer.bind(this);
+        this.updateTime = this.updateTime.bind(this);
     }
+
+    updateTime(){
+        let duration = intervalToDuration({
+            start: this.state.weddingDate,
+            end: this.state.currentDate
+        })
+
+        if (duration.days <= 0 && duration.hours <= 0 && duration.minutes <= 0){
+            this.setState({play: true})
+        }
+
+        this.setState({
+            currentDate: new Date()
+        })
+    }
+
 
     returnDate(){
         let duration = intervalToDuration({
             start: this.state.weddingDate,
             end: this.state.currentDate
         })
-        if (duration < 500){
-            this.setState({play: true})
-        }
+        
+        
         let outString = `${duration.days} days, ${duration.hours} hours, ${duration.minutes} minutes`
         return outString;
     }
@@ -44,6 +60,7 @@ export class CounterComponent extends React.Component{
         } else {
             return (
             <div>
+                
                 <h2>The wedding stream will begin in {this.returnDate()}.</h2>
                 <h2>Until then feel free to watch one of the greatest youtube videos of all time</h2>
                 <hr></hr>
@@ -59,6 +76,10 @@ export class CounterComponent extends React.Component{
         }
     }
     
+    componentDidMount(){
+        setInterval(()=>this.updateTime(), 1000);
+        
+    }
 
     render(){
         return(

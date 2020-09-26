@@ -1,0 +1,8 @@
+update favicon
+update logo
+-----update video render to a lifecycle function
+    -----test updated video function
+change placeholder video to slideshow
+https://www.zola.com/wedding/ericandemilie/registry
+-----make things update continuously
+---------------------------
