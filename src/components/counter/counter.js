@@ -33,6 +33,7 @@ export class CounterComponent extends React.Component{
             <div>
                 <hr></hr>
                     {/* add live stream link to src */}
+                    <p>This is where the stream will go</p>
                     <div className = "iframeContainer">
                         <iframe className = "responsiveIframe" src="" title = "streamPlayer" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope" allowFullScreen></iframe>
                     </div>
@@ -52,7 +53,7 @@ export class CounterComponent extends React.Component{
                 </div>
                 <hr></hr>
                 <p>Once the stream starts the video player will update and show something (hopefully) just as good. Aka the Miesner Martinez wedding :)</p>
-            </div>
+            </div> 
             )
         }
     }
