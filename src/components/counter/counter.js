@@ -1,12 +1,14 @@
 import React from 'react';
 import {intervalToDuration} from 'date-fns';
+import couplePic from './couplePic.jpg';
+
 
 export class CounterComponent extends React.Component{
     constructor(props){
         super(props);
       
         this.state = {
-            weddingDate: new Date(2020, 9, 18, 12), //set for noon, change accordingly
+            weddingDate: new Date(2020, 9, 18, 18), //set for noon, change accordingly
             currentDate: new Date(),
             play: false
             //toDateString()
@@ -49,7 +51,6 @@ export class CounterComponent extends React.Component{
             return (
             <div>
                 <hr></hr>
-                    {/* add live stream link to src */}
                     <p>This is where the stream will go</p>
                     <div className = "iframeContainer">
                         <iframe className = "responsiveIframe" src="" title = "streamPlayer" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope" allowFullScreen></iframe>
@@ -64,10 +65,8 @@ export class CounterComponent extends React.Component{
                 <h2>The wedding stream will begin in {this.returnDate()}.</h2>
                 <h2>Until then feel free to watch one of the greatest youtube videos of all time</h2>
                 <hr></hr>
-                <div className = "iframeConstraint">
-                    <div className = "iframeContainer">
-                        <iframe className = "responsiveIframe" src="https://www.youtube.com/embed/F-X4SLhorvw" title = "streamPlayer" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope" allowFullScreen></iframe>
-                    </div>
+                <div className = "picContainer">
+                        <img className = "heroImg" src={couplePic} alt="A photo of Emilie and Eric" />
                 </div>
                 <hr></hr>
                 <p>Once the stream starts the video player will update and show something (hopefully) just as good. Aka the Miesner Martinez wedding :)</p>
