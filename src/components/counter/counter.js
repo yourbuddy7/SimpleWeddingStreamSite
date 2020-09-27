@@ -66,7 +66,7 @@ export class CounterComponent extends React.Component{
                 <h2>Until then feel free to watch one of the greatest youtube videos of all time</h2>
                 <hr></hr>
                 <div className = "picContainer">
-                        <img className = "heroImg" src={couplePic} alt="A photo of Emilie and Eric" />
+                        <img className = "heroImg" src={couplePic} alt="Emilie and Eric"></img>
                 </div>
                 <hr></hr>
                 <p>Once the stream starts the video player will update and show something (hopefully) just as good. Aka the Miesner Martinez wedding :)</p>
