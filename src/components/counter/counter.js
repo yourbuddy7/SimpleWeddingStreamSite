@@ -6,7 +6,7 @@ export class CounterComponent extends React.Component{
         super(props);
       
         this.state = {
-            weddingDate: new Date(2020, 9, 10, 12), //set for noon, change accordingly
+            weddingDate: new Date(2020, 9, 18, 12), //set for noon, change accordingly
             currentDate: new Date(),
             play: false
             //toDateString()
