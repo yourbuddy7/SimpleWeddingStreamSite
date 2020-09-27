@@ -63,13 +63,12 @@ export class CounterComponent extends React.Component{
             <div>
                 
                 <h2>The wedding stream will begin in {this.returnDate()}.</h2>
-                <h2>Until then feel free to watch one of the greatest youtube videos of all time</h2>
                 <hr></hr>
                 <div className = "picContainer">
                         <img className = "heroImg" src={couplePic} alt="Emilie and Eric"></img>
                 </div>
                 <hr></hr>
-                <p>Once the stream starts the video player will update and show something (hopefully) just as good. Aka the Miesner Martinez wedding :)</p>
+                <p>Once the stream starts the image will update to a video player containing the stream.</p>
             </div> 
             )
         }
