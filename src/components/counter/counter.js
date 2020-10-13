@@ -11,7 +11,6 @@ export class CounterComponent extends React.Component{
             weddingDate: new Date(2020, 9, 18, 18), //set for noon, change accordingly
             currentDate: new Date(),
             play: false
-            //toDateString()
         }
         this.returnDate = this.returnDate.bind(this);
         this.renderVideoPlayer = this.renderVideoPlayer.bind(this);
@@ -40,12 +39,10 @@ export class CounterComponent extends React.Component{
             end: this.state.currentDate
         })
         
-        
         let outString = `${duration.days} days, ${duration.hours} hours, ${duration.minutes} minutes`
         return outString;
     }
 
-    //make this into a lifecycle method please
     renderVideoPlayer(){
         if (this.state.play){
             return (
@@ -69,6 +66,7 @@ export class CounterComponent extends React.Component{
                 </div>
                 <hr></hr>
                 <p>Once the stream starts the image will update to a video player containing the stream.</p>
+                <a href='https://www.zola.com/wedding/ericandemilie' target='_blank' rel="noopener noreferrer">return to the main wedding site here</a>
             </div> 
             )
         }
@@ -76,13 +74,13 @@ export class CounterComponent extends React.Component{
     
     componentDidMount(){
         setInterval(()=>this.updateTime(), 1000);
-        
     }
 
     render(){
         return(
             <div>
                 <br></br>
+
                 <div className = "TimeLeftConatiner">
                     <h1>{this.returnDate()}</h1>
                     <h1 className = "h1Light">Until the Miesner Martinez wedding live stream!</h1>
