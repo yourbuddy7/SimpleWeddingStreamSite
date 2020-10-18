@@ -49,9 +49,10 @@ export class CounterComponent extends React.Component{
             <div>
                 <hr></hr>
                     {/* This is where the stream goes */}
-                    <div className = "iframeContainer">
+                    {/* <div className = "iframeContainer">
                         <iframe className = "responsiveIframe" src="https://www.youtube.com/embed/B6Vq5Jyhm_w" title = "streamPlayer" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope" allowFullScreen></iframe>
-                    </div>
+                    </div> */}
+                    <p>Thanks for coming by! We will post the recording soon</p>
                 <hr></hr>
             </div>
             )
