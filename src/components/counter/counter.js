@@ -44,8 +44,34 @@ export class CounterComponent extends React.Component{
     }
 
     renderVideoPlayer(){
-        if (this.state.play){
-            return (
+        // if (this.state.play){
+        //     return (
+        //     <div>
+        //         <hr></hr>
+        //             {/* This is where the stream goes */}
+        //             {/* <div className = "iframeContainer">
+        //                 <iframe className = "responsiveIframe" src="https://www.youtube.com/embed/B6Vq5Jyhm_w" title = "streamPlayer" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope" allowFullScreen></iframe>
+        //             </div> */}
+        //             <p>Thanks for coming by! We will post the recording soon</p>
+        //         <hr></hr>
+        //     </div>
+        //     )
+        // } else {
+        //     return (
+        //     <div>
+                
+        //         <h2>The wedding stream will begin in {this.returnDate()}.</h2>
+        //         <hr></hr>
+        //         <div className = "picContainer">
+        //                 <img className = "heroImg" src={couplePic} alt="Emilie and Eric"></img>
+        //         </div>
+        //         <hr></hr>
+        //         <p>Once the stream starts the image will update to a video player containing the stream.</p>
+        //         <a href='https://www.zola.com/wedding/ericandemilie' target='_blank' rel="noopener noreferrer">return to the main wedding site here</a>
+        //     </div> 
+        //     )
+        // }
+        return (
             <div>
                 <hr></hr>
                     {/* This is where the stream goes */}
@@ -55,22 +81,6 @@ export class CounterComponent extends React.Component{
                     <p>Thanks for coming by! We will post the recording soon</p>
                 <hr></hr>
             </div>
-            )
-        } else {
-            return (
-            <div>
-                
-                <h2>The wedding stream will begin in {this.returnDate()}.</h2>
-                <hr></hr>
-                <div className = "picContainer">
-                        <img className = "heroImg" src={couplePic} alt="Emilie and Eric"></img>
-                </div>
-                <hr></hr>
-                <p>Once the stream starts the image will update to a video player containing the stream.</p>
-                <a href='https://www.zola.com/wedding/ericandemilie' target='_blank' rel="noopener noreferrer">return to the main wedding site here</a>
-            </div> 
-            )
-        }
     }
     
     componentDidMount(){
