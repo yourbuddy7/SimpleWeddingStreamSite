@@ -7,9 +7,10 @@ import {CounterComponent} from './components/counter/counter';
 function App() {
   return (
     <div className="App">
-      <CounterComponent />
+      {/* <CounterComponent />   */}
+      <h1>The live stream is finished and an edited version will be posted ass soon as possible</h1>
       <footer>
-        <h6>A very fancy app made by the brother of the bride</h6>
+        {/* <h6>A very fancy app made by the brother of the bride</h6> */}
       </footer>
     </div>
   );

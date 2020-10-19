@@ -81,6 +81,7 @@ export class CounterComponent extends React.Component{
                     <p>Thanks for coming by! We will post the recording soon</p>
                 <hr></hr>
             </div>
+        )
     }
     
     componentDidMount(){
