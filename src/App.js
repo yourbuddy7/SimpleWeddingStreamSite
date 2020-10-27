@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <h1>
-        Miesner Martines Live Stream Archive
+        Miesner Martines Wedding Live Stream Archive
       </h1>
       <div className = "iframeContainer">
         <iframe className = "responsiveIframe" src="https://www.youtube.com/embed/JpalskUfPCs" title = "streamPlayer" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope" allowFullScreen></iframe>
