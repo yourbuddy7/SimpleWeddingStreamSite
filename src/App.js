@@ -8,7 +8,12 @@ function App() {
   return (
     <div className="App">
       {/* <CounterComponent />   */}
-      <h1>The live stream is finished and an edited version will be posted ass soon as possible</h1>
+      <h1>
+        Miesner Martines Live Stream Archive
+      </h1>
+      <div className = "iframeContainer">
+        <iframe className = "responsiveIframe" src="https://www.youtube.com/embed/JpalskUfPCs" title = "streamPlayer" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope" allowFullScreen></iframe>
+      </div>
       <footer>
         {/* <h6>A very fancy app made by the brother of the bride</h6> */}
       </footer>

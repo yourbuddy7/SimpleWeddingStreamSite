@@ -78,7 +78,10 @@ export class CounterComponent extends React.Component{
                     {/* <div className = "iframeContainer">
                         <iframe className = "responsiveIframe" src="https://www.youtube.com/embed/B6Vq5Jyhm_w" title = "streamPlayer" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope" allowFullScreen></iframe>
                     </div> */}
-                    <p>Thanks for coming by! We will post the recording soon</p>
+                    {/* <p>Thanks for coming by! We will post the recording soon</p> */}
+                    <div className = "iframeContainer">
+        //                 <iframe className = "responsiveIframe" src="https://www.youtube.com/embed/JpalskUfPCs" title = "streamPlayer" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope" allowFullScreen></iframe>
+        //             </div>
                 <hr></hr>
             </div>
         )
