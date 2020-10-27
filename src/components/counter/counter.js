@@ -1,6 +1,6 @@
 import React from 'react';
 import {intervalToDuration} from 'date-fns';
-import couplePic from './couplePic.jpg';
+// import couplePic from './couplePic.jpg';
 
 
 export class CounterComponent extends React.Component{

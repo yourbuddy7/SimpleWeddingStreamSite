@@ -1,13 +1,12 @@
 import React from 'react';
 import './App.css';
-import {CounterComponent} from './components/counter/counter';
+// import {CounterComponent} from './components/counter/counter';
 
 //https://www.zola.com/wedding/ericandemilie/
 
 function App() {
   return (
     <div className="App">
-      {/* <CounterComponent />   */}
       <h1>
         Miesner Martines Live Stream Archive
       </h1>
@@ -20,7 +19,5 @@ function App() {
     </div>
   );
 }
-
-//this comment is made as a update confirmation 
 
 export default App;
